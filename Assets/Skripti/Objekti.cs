@@ -7,6 +7,8 @@ public class Objekti : MonoBehaviour {
  public GameObject atkritumuMasina;
  public GameObject atraPalidziba;
  public GameObject autobuss;
+ public GameObject b2;
+ public GameObject cementMasina;
 
  //Uzglabā katra transportlīdzekļa sākotnējo atrašanās vietu
  [HideInInspector]
@@ -16,6 +18,14 @@ public class Objekti : MonoBehaviour {
 
   [HideInInspector]
  public Vector2 bussKoord;
+
+	[HideInInspector]
+	public Vector2 b2Koord;
+
+	[HideInInspector]
+	public Vector2 buvMasinaKoord;
+
+
 
  public Canvas kanva;
 
@@ -40,6 +50,12 @@ public class Objekti : MonoBehaviour {
 
 		bussKoord = 
 		autobuss.GetComponent<RectTransform>().localPosition;
+
+		b2Koord =
+			b2.GetComponent<RectTransform> ().localPosition;
+
+		buvMasinaKoord =
+			cementMasina.GetComponent<RectTransform> ().localPosition;
 	}
 	
 	
