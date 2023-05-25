@@ -6,7 +6,7 @@ Projekts demonstrē drag un drop funkcionalitāti. Spēles mērķis ir pēc iesp
 - [x] Iespēja transportlīdzekli nolikt uz kartes
 - [x] Iespēja transportlīdzekli nolikt uz nepareizā laukuma
 - [x] Iespēja transportlīdzekli nolikt uz pareizā laukuma
-- [ ] Rotācijas leņķa maiņa ap Z asi
-- [ ] Platuma maiņa pa X asi
-- [ ] Platuma maiņa pa Y asi
+- [x] Rotācijas leņķa maiņa ap Z asi
+- [x] Platuma maiņa pa X asi
+- [x] Platuma maiņa pa Y asi
 - [x] Skaņas efekti
