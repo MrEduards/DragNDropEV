@@ -71,6 +71,37 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 						PlayOneShot (objektuSkipts.skanaKoAtskanot [6]);
 						break;
 					
+					case "e61":
+						objektuSkipts.skanasAvots.
+						PlayOneShot (objektuSkipts.skanaKoAtskanot [7]);
+						break;
+
+					case "ekskavators":
+						objektuSkipts.skanasAvots.
+						PlayOneShot (objektuSkipts.skanaKoAtskanot [8]);
+						break;
+
+					case "policija":
+						objektuSkipts.skanasAvots.
+						PlayOneShot (objektuSkipts.skanaKoAtskanot [9]);
+						break;
+
+					case "traktors1":
+						objektuSkipts.skanasAvots.
+						PlayOneShot (objektuSkipts.skanaKoAtskanot [10]);
+						break;
+
+					case "traktors5":
+						objektuSkipts.skanasAvots.
+						PlayOneShot (objektuSkipts.skanaKoAtskanot [11]);
+						break;
+
+
+					case "ugunsdzeseji":
+						objektuSkipts.skanasAvots.
+						PlayOneShot (objektuSkipts.skanaKoAtskanot [12]);
+						break;
+
 					default:
 						Debug.Log ("Tags netiek atpazīts!");
 						break;
@@ -108,7 +139,35 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 						objektuSkipts.e46Koord;
 					break;
 
+				case "e61":
+					objektuSkipts.e61.GetComponent<RectTransform> ().localPosition =
+						objektuSkipts.e61Koord;
+					break;
+
+				case "ekskavators":
+					objektuSkipts.ekskavators.GetComponent<RectTransform> ().localPosition =
+						objektuSkipts.ekskavatorsKoord;
+					break;
+
+				case "policija":
+					objektuSkipts.policija.GetComponent<RectTransform> ().localPosition =
+						objektuSkipts.policijaKoord;
+					break;
+
+				case "traktors1":
+					objektuSkipts.traktors1.GetComponent<RectTransform> ().localPosition =
+						objektuSkipts.traktors1Koord;
+					break;
 			
+				case "traktors5":
+					objektuSkipts.traktors5.GetComponent<RectTransform> ().localPosition =
+						objektuSkipts.traktors5Koord;
+					break;
+
+				case "ugunsdzeseji":
+					objektuSkipts.ugunsdzeseji.GetComponent<RectTransform> ().localPosition =
+						objektuSkipts.ugunsdzesejiKoord;
+					break;
 
 				default:
 					Debug.Log ("Tags netiek atpazīts!");

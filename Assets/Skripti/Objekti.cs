@@ -10,6 +10,12 @@ public class Objekti : MonoBehaviour {
  public GameObject b2;
  public GameObject cementMasina;
  public GameObject e46;
+ public GameObject e61;
+ public GameObject ekskavators;
+ public GameObject policija;
+ public GameObject traktors1;
+ public GameObject traktors5;
+ public GameObject ugunsdzeseji;
 
  //Uzglabā katra transportlīdzekļa sākotnējo atrašanās vietu
  [HideInInspector]
@@ -28,6 +34,24 @@ public class Objekti : MonoBehaviour {
 
 	[HideInInspector]
 	public Vector2 e46Koord;
+
+	[HideInInspector]
+	public Vector2 e61Koord;
+
+	[HideInInspector]
+	public Vector2 ekskavatorsKoord;
+
+	[HideInInspector]
+	public Vector2 policijaKoord;
+
+	[HideInInspector]
+	public Vector2 traktors1Koord;
+
+	[HideInInspector]
+	public Vector2 traktors5Koord;
+
+	[HideInInspector]
+	public Vector2 ugunsdzesejiKoord;
 
 
 
@@ -62,7 +86,25 @@ public class Objekti : MonoBehaviour {
 			cementMasina.GetComponent<RectTransform> ().localPosition;
 
 		e46Koord =
-			e46.GetComponent<RectTransform> ().localPosition;
+			e46.GetComponent<RectTransform>().localPosition;
+
+		e61Koord =
+			e61.GetComponent<RectTransform>().localPosition;
+
+		ekskavatorsKoord =
+			ekskavators.GetComponent<RectTransform>().localPosition;
+
+		policijaKoord =
+			policija.GetComponent<RectTransform>().localPosition;
+
+		traktors1Koord =
+			traktors1.GetComponent<RectTransform>().localPosition;
+
+		traktors5Koord =
+			traktors5.GetComponent<RectTransform>().localPosition;
+
+		ugunsdzesejiKoord =
+			ugunsdzeseji.GetComponent<RectTransform>().localPosition;
 	}
 	
 	
