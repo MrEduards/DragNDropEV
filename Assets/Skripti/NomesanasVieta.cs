@@ -169,6 +169,10 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 						objektuSkipts.ugunsdzesejiKoord;
 					break;
 
+
+				
+
+
 				default:
 					Debug.Log ("Tags netiek atpazīts!");
 					break;

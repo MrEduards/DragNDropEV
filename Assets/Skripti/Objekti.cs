@@ -16,6 +16,7 @@ public class Objekti : MonoBehaviour {
  public GameObject traktors1;
  public GameObject traktors5;
  public GameObject ugunsdzeseji;
+ 
 
  //Uzglabā katra transportlīdzekļa sākotnējo atrašanās vietu
  [HideInInspector]
@@ -52,6 +53,8 @@ public class Objekti : MonoBehaviour {
 
 	[HideInInspector]
 	public Vector2 ugunsdzesejiKoord;
+
+
 
 
 
@@ -105,6 +108,8 @@ public class Objekti : MonoBehaviour {
 
 		ugunsdzesejiKoord =
 			ugunsdzeseji.GetComponent<RectTransform>().localPosition;
+
+
 	}
 	
 	
