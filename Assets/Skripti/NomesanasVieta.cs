@@ -65,6 +65,11 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 						objektuSkipts.skanasAvots.
 						PlayOneShot (objektuSkipts.skanaKoAtskanot [5]);
 						break;
+
+					case "e46":
+						objektuSkipts.skanasAvots.
+						PlayOneShot (objektuSkipts.skanaKoAtskanot [6]);
+						break;
 					
 					default:
 						Debug.Log ("Tags netiek atpazīts!");
@@ -96,6 +101,11 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 				case "buvMasina":
 					objektuSkipts.cementMasina.GetComponent<RectTransform> ().localPosition =
 						objektuSkipts.buvMasinaKoord;
+					break;
+
+				case "e46":
+					objektuSkipts.e46.GetComponent<RectTransform> ().localPosition =
+						objektuSkipts.e46Koord;
 					break;
 
 			
