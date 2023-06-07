@@ -33,9 +33,9 @@ public class Taimers : MonoBehaviour
 
 	void AtjauninātTaimeraTekstu()
 	{
-		int minūtes = Mathf.FloorToInt(currentTime / 60);
+		int min = Mathf.FloorToInt(currentTime / 60);
 		int sekundes = Mathf.FloorToInt(currentTime % 60);
-		string formatētsLaiks = string.Format("{0:00}:{1:00}", minūtes, sekundes);
+		string formatētsLaiks = string.Format("{0:00}:{1:00}", min, sekundes);
 		taimeraTeksts.text = formatētsLaiks;
 	}
 }
