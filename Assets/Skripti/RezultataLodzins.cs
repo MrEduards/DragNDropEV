@@ -6,14 +6,14 @@ using UnityEngine.UI;
 
 public class RezultataLodzins : MonoBehaviour
 {
-	private int vehiclesPlaced = 0; // Skaits, cik transportlīdzekļi ir novietoti
-	private bool gameFinished = false; // Vai spēle ir pabeigta
-	private float gameTime = 0f; // Spēles laiks
+	private int vehiclesPlaced = 0; 
+	private bool gameFinished = false; 
+	private float gameTime = 0f; 
 
-	private const int TotalVehicles = 12; // Kopējais transportlīdzekļu skaits
-	private const float ThreeStarTime = 60f; // Laiks, lai iegūtu visas trīs zvaigznes (1 minūte)
-	private const float TwoStarTime = 120f; // Laiks, lai iegūtu divas zvaigznes (2 minūtes)
-	private const float MaxGameTime = 150f; // Maksimālais laiks (2.5 minūtes)
+	private const int TotalVehicles = 12; // Kopējais transportlīdz. skaits
+	private const float ThreeStarTime = 60f; // Laiks, lai iegūtu visas trīs zvaigznes 1 minūte
+	private const float TwoStarTime = 120f; // Laiks, lai iegūtu divas zvaigznes 2 minūtes
+	private const float MaxGameTime = 150f; // Maksimālais laiks 2.5 minūtes
 
 	public Image starImage1;
 	public Image starImage2;
