@@ -7,7 +7,7 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 	private Vector2 vietasIzm, velkObjIzm;
 	private float xIzmeruStarp, yizmeruStarp;
 	public Objekti objektuSkipts;
-
+	public RezultataLodzins Skaits;
 	public void OnDrop(PointerEventData eventData)
 	{
 		if (eventData.pointerDrag != null) {
@@ -15,14 +15,15 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 				velkObjZRot = eventData.pointerDrag.GetComponent<RectTransform> ().transform.eulerAngles.z;
 
 				vietasZRot = GetComponent<RectTransform> ().transform.eulerAngles.z;
-				rotacijasStarpiba = Mathf.Abs (vietasZRot - velkObjIzm.x);
+				rotacijasStarpiba = Mathf.Abs (velkObjZRot - vietasZRot);
 
 				velkObjIzm = eventData.pointerDrag.GetComponent<RectTransform> ().localScale;
 
 				vietasIzm = GetComponent<RectTransform> ().localScale;
 
-				xIzmeruStarp = Mathf.Abs (vietasIzm.x - velkObjIzm.x);
-				yizmeruStarp = Mathf.Abs (vietasIzm.y - velkObjIzm.y);
+
+				yizmeruStarp = Mathf.Abs (velkObjIzm.y - vietasIzm.y);
+				xIzmeruStarp = Mathf.Abs (velkObjIzm.x - vietasIzm.x);
 
 				Debug.Log ("Rotācijs starpība: " + rotacijasStarpiba
 				+ "\nx starpība: " + xIzmeruStarp
@@ -47,10 +48,14 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 					case "atkritumi":
 						objektuSkipts.skanasAvots.
 						PlayOneShot (objektuSkipts.skanaKoAtskanot [1]);
+						Skaits.Skait++;
 						break;
+
+
 					case "medicina":
 						objektuSkipts.skanasAvots.
 						PlayOneShot (objektuSkipts.skanaKoAtskanot [2]);
+						Skaits.Skait++;
 						break;
 					case "buss":
 						objektuSkipts.skanasAvots.
@@ -59,47 +64,56 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 					case "b2":
 						objektuSkipts.skanasAvots.
 						PlayOneShot (objektuSkipts.skanaKoAtskanot [4]);
+						Skaits.Skait++;
 						break;
 
 					case "buvMasina":
 						objektuSkipts.skanasAvots.
 						PlayOneShot (objektuSkipts.skanaKoAtskanot [5]);
+						Skaits.Skait++;
 						break;
 
 					case "e46":
 						objektuSkipts.skanasAvots.
 						PlayOneShot (objektuSkipts.skanaKoAtskanot [6]);
+						Skaits.Skait++;
 						break;
 					
 					case "e61":
 						objektuSkipts.skanasAvots.
 						PlayOneShot (objektuSkipts.skanaKoAtskanot [7]);
+						Skaits.Skait++;
 						break;
 
 					case "ekskavators":
 						objektuSkipts.skanasAvots.
 						PlayOneShot (objektuSkipts.skanaKoAtskanot [8]);
+						Skaits.Skait++;
 						break;
 
 					case "policija":
 						objektuSkipts.skanasAvots.
 						PlayOneShot (objektuSkipts.skanaKoAtskanot [9]);
+						Skaits.Skait++;
 						break;
 
 					case "traktors1":
 						objektuSkipts.skanasAvots.
 						PlayOneShot (objektuSkipts.skanaKoAtskanot [10]);
+						Skaits.Skait++;
 						break;
 
 					case "traktors5":
 						objektuSkipts.skanasAvots.
 						PlayOneShot (objektuSkipts.skanaKoAtskanot [11]);
+						Skaits.Skait++;
 						break;
 
 
 					case "ugunsdzeseji":
 						objektuSkipts.skanasAvots.
 						PlayOneShot (objektuSkipts.skanaKoAtskanot [12]);
+						Skaits.Skait++;
 						break;
 
 					default:

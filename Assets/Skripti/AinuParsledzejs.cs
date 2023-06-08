@@ -14,10 +14,8 @@ public class AinuParsledzejs : MonoBehaviour {
 	}
 
 	public void Apturet() {
-		#if UNITY_EDITOR
-		UnityEditor.EditorApplication.isPlaying = false;
-		#else
+		
 		Application.Quit();
-		#endif
+
 	}
 }

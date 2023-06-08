@@ -11,6 +11,7 @@ IDragHandler, IEndDragHandler {
  public Objekti objektuSkripts;
  private CanvasGroup kanvasGrupa;
  private RectTransform velkObjRectTransf;
+	public RezultataLodzins skaita; 
 
  public void OnBeginDrag(PointerEventData eventData)
  { 
@@ -34,6 +35,7 @@ IDragHandler, IEndDragHandler {
 			kanvasGrupa.blocksRaycasts = true;
 		} else {
 			objektuSkripts.pedejaisVilktais = null;
+			//Debug.Log (skaita.Skait);
 		}
 		objektuSkripts.vaiIstajaVieta = false;
 				
